@@ -1,5 +1,0 @@
-GET https://gnikdroy.pythonanywhere.com/api/book/
-
-###
-
-POST https://gnikdroy.pythonanywhere.com/api/book/?=page=2

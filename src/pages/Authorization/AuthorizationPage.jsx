@@ -17,7 +17,7 @@ const AuthorizationPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('https://kuryenet-6d36169b85c5.herokuapp.com/authentication/login', {
+      const response = await fetch('backendAPI/authentication/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const AuthorizationPage = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await fetch('https://kuryenet-6d36169b85c5.herokuapp.com/auth/register', {
+      const response = await fetch('backendAPI/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

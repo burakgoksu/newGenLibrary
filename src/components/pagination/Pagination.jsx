@@ -10,7 +10,7 @@ export default function Pagination({ prevUrl, nextUrl, count }) {
   const [pageNum, setPageNum] = useState(1)
 
   // set page url
-    const url = `https://kuryenet-6d36169b85c5.herokuapp.com/api/books/getByPageNumber?pageNumber=${pageNum}`
+    const url = `backendAPI/api/books/getByPageNumber?pageNumber=${pageNum}`
 
   useEffect(() => {
     dispatch(getPageNum(url));

@@ -12,7 +12,7 @@ const initialState = {
 export const getBooks = createAsyncThunk(
   "library/getBooks",
   async (thunkAPI) => {
-    return fetch("https://kuryenet-6d36169b85c5.herokuapp.com/api/books/getall").then((res) =>
+    return fetch("backendAPI/api/books/getall").then((res) =>
       res.json()
     );
   }
